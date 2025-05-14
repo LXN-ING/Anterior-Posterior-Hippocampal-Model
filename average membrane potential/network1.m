@@ -1,9 +1,9 @@
 function net = network1(n_ext)
 
-% 初始化结构体
+
 net = struct();
 
-% 初始化 A 群体的连接
+
 net.neigh_send_internal_A = zeros(500, 50);
 net.neigh_receiv_internal_A = zeros(500, 50);
 net.neigh_receiv_external_A = zeros(500, 20);
@@ -51,7 +51,7 @@ for j = 1:500
     end
 end
 
-% 初始化 P 群体的连接
+
 net.neigh_send_internal_P = net.neigh_send_internal_A;
 net.neigh_receiv_internal_P = net.neigh_receiv_internal_A;
 net.neigh_receiv_external_P = net.neigh_receiv_external_A;
